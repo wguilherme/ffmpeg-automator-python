@@ -3,10 +3,10 @@ import fnmatch
 import sys
 
 codecVideo = '-c:v libx264 '
-crf = '-crf 23 '
-preset = '-preset fast '
-codecAudio = '-c:a aac '
-bitrateAudio = '-b:a 320k '
+crf = '-crf 25 '
+preset = '-preset veryfast '
+codecAudio = '-c:a aac -ac 2 '
+bitrateAudio = '-b:a 128k '
 newExtension = '.mp4'
 
 config = codecVideo + crf + preset + codecAudio + bitrateAudio
